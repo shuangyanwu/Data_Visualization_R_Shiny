@@ -3,7 +3,7 @@ library(tidyverse)
 df<-NULL
 for (y in c(1880:2021))
 {
-  file=paste("/Users/wushuangyan/Desktop/STAT classes/STAT 6365E Programming/Working Directory/Names/namesUS/yob",y,".txt",sep="")
+  file=paste("/Users/wushuangyan/Desktop/Projects/Names/National/yob",y,".txt",sep="")
   ndata=read_csv(file,na=c(" ","NA","NULL"), col_names = FALSE)
 
   ndata1<-mutate(ndata, Year=rep(y,length(ndata$X1)))
