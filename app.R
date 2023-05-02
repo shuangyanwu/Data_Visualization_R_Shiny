@@ -1,4 +1,3 @@
-# Final project
 source("namefun1.R")
 source("namefun3.R")
 library(shiny)
